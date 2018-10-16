@@ -1,0 +1,19 @@
+{
+  "name": "gtk-example",
+  "version": "1.0.0",
+  "description": "A simple example app using node-gtk",
+  "author": "Egee",
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "node-gtk": "^0.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
