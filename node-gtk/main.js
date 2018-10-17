@@ -1,7 +1,7 @@
-const gi = require("node-gtk");
+const Ngtk = require("node-gtk");
 
-const Gtk = gi.require("Gtk", "3.0");
-gi.startLoop();
+const Gtk = Ngtk.require("Gtk", "3.0");
+Ngtk.startLoop();
 Gtk.init();
 
 const header = new Gtk.HeaderBar();
@@ -12,7 +12,6 @@ header.setShowCloseButton(true);
 const window = new Gtk.Window();
 window.windowPosition = Gtk.WindowPosition.CENTER;
 window.on("destroy", () => Gtk.mainQuit());
-window.on("delete-event", () => false);
 window.setDefaultSize(350, 70);
 window.setTitlebar(header);
 window.borderWidth = 10;
